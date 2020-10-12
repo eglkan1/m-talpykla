@@ -50,26 +50,27 @@ body {
 /* END HEADER */
 
 /* BANNER */
-.hero-text {
-
-width: 100%;
-height: 100px;
-background: #F97C19;
-
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
+.row{
   display: table;
+  height: 500px;
+  width: 100%;
+   margin: 0px;
+
+}
+.column.left {
+  background-color: #F97C19;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+}
+.column.right {
+  background: url('../images/banner.jpg') no-repeat;
+  background-size: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
 
 }
 
