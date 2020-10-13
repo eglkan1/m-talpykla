@@ -39,9 +39,7 @@ body {
   border-radius: 3px;
 }
 #login {
- position: absolute;
- right: 100px;
- padding-top: 30px;
+
 
 }
 #nav-list a:hover {
@@ -50,29 +48,6 @@ body {
 /* END HEADER */
 
 /* BANNER */
-.row{
-  display: table;
-  height: 500px;
-  width: 100%;
-   margin: 0px;
-
-}
-.column.left {
-  background-color: #F97C19;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  width: 50%;
-}
-.column.right {
-  background: url('../images/banner.jpg') no-repeat;
-  background-size: 100%;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  width: 50%;
-
-}
 
 /* END OF BANNER */
 

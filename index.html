@@ -10,13 +10,14 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
     <header>
 
       <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
+        <div class="container-fluid">
           <div class="navbar-header">
             <a href="index.html" class="pull-left">
               <div id="logo-img" alt="Logo image"></div>
@@ -29,7 +30,6 @@
               </p>
             </div>
 
-            <div class="container">
               <ul id="nav-list" class="nav navbar-nav navbar-right">
 
                 <li id="login">
@@ -38,25 +38,29 @@
 
               </ul>
             </div>
+            </div>
           </header>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6" style="background-color:#F97C19; height: 450px;">
+      <p>Lorem ipsum...</p>
 
-          <div class="row">
-            <div class="column left">
-               <p>
-                  Saugokite ir dalinkitės individualia
-                  metodine medžiaga su
-                  mokiniais ir studentais
-                </p>
-                <button>Sužinoti daugiau</button>
-            </div>
-            <div class="column right"></div>
-          </div>
+    </div>
+    <div class="col-sm-6" style="background:url('../images/banner.jpg') no-repeat; height: 450px; background-size: 100% 450px">
+    </div>
+  </div>
+</div>
+
          
 
           <div id="about-us" class="container">
             <h1 class="text-center"> Apie mus</h1>
           </div>
 
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->         
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
         </body>
       </html>
