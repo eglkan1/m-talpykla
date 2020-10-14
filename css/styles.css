@@ -1,6 +1,11 @@
 body {
   font-family: Playfair display;
 }
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
 /** HEADER **/
 #header-nav {
   background-color: white;
@@ -38,16 +43,25 @@ body {
   background: #F97C19;
   border-radius: 3px;
 }
-#login {
 
-
-}
 #nav-list a:hover {
   background: black;
+}
+#login a {
+
 }
 /* END HEADER */
 
 /* BANNER */
+.banner-image{
+  background:url('../images/banner.jpg') no-repeat; 
+  height: 450px; 
+  background-size: cover;
 
+}
+.banner-color{
+  background-color:#F97C19; 
+  height: 450px;
+}
 /* END OF BANNER */
 
