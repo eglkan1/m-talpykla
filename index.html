@@ -14,15 +14,14 @@
 </head>
 
 <body>
-  <header>
 
+  <header>
     <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <a href="index.html" class="pull-left">
             <div id="logo-img" alt="Logo image"></div>
           </a>
-
           <div class="navbar-brand">
             <a href="index.html"><h1>M-TALPYKLA</h1></a>
             <p>
@@ -30,30 +29,51 @@
             </p>
           </div>
         </div>
-        <ul id="nav-list" class="pull-right">
+        <ul id="nav-list" class="pull-right hidden-xs">
           <li id="login">
             <a href="#">Prisijungti</a>
           </li>
         </ul>
-      </header>
+      </div>
+    </header>
 
+    <div id="login-btn" class="visible-xs text-center">
+      <a href="#">
+        Prisijungti
+      </a>
+    </div>
+
+    <div class="container-fluid">
       <div class="row">
-
         <div class="banner-image col-sm-6">
         </div>
-
         <div class="banner-color col-sm-6">
           <p>
             Saugokite ir dalinkitės 
             individualia metodine medžiaga su mokiniais ir studentais
           </p>
-          <ul class="banner-links">
+          <ul class="banner-links hidden-xs">
             <li id="about"><a href="#">Sužinoti daugiau</a></li>
             <li id="register"><a href="#">Registruotis</a></li>
           </ul>
-        </div>
 
+          <div class="banner-links-xs visible-xs">
+            <div id="about-btn" class="text-center">
+              <a href="#">
+                Sužinoti daugiau
+              </a>
+            </div>
+
+            <div id="register-btn" class="text-center">
+              <a href="#">
+                Registracija
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
 
 

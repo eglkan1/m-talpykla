@@ -36,7 +36,7 @@ body {
   margin-top: 15px;
 }
 
-#nav-list li {
+#nav-list li {  /*login button for large screen*/
   display: inline-block;
   margin-top: 50px;
 }
@@ -50,6 +50,22 @@ body {
 }
 
 #nav-list a:hover {
+  background: black;
+}
+
+#login-btn > a { /*login button for phone screen*/
+    font-size: 1.2em;
+    display: block;
+    margin: 0 0px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #F97C19;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+
+#login-btn a:hover {
   background: black;
 }
 /* END HEADER */
@@ -97,6 +113,28 @@ body {
 }
 .banner-links li {
   margin:350px 0px 0 0;
+}
+
+.banner-links-xs a {
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 50px;
+  margin:350px 0px 0 0;
+
+}
+
+.banner-links-xs a:hover{
+  background: #F97C19;
+}
+#about-btn > a {
+  position: absolute;
+  left: 0;
+}
+#register-btn > a {
+  position: absolute;
+  right: 0;
 }
 /* END OF BANNER */
 
