@@ -101,7 +101,9 @@ body {
   padding: 15px 100px;
 }
 .banner-links a:hover{
-  background: #F97C19;
+
+  border-color: black;
+  border-style: solid;
 }
 #register {
   position: absolute;
@@ -126,7 +128,7 @@ body {
 }
 
 .banner-links-xs a:hover{
-  background: #F97C19;
+  background: orange;
 }
 #about-btn > a {
   position: absolute;
@@ -140,8 +142,19 @@ body {
 
 /* Apie mus */
 
-#about-us{
+#title > h1{
   font-style: italic;
-  padding: 40px 0 0 0;
+  padding: 40px;
 }
+
+/*FOOTER*/
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 137, 51, 0.06);
+}
+
+
 
