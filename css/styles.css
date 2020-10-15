@@ -1,7 +1,9 @@
 body {
   font-family: Playfair display;
 }
+
 /** HEADER **/
+
 #header-nav {
   background-color: white;
   margin: 0;
@@ -12,6 +14,7 @@ body {
   height: 120px;
   background-size: 8em;
   margin: 10px 15px 0px 0;
+  cursor: pointer;
 }
 .navbar-brand {
   padding-top: 25px;
@@ -33,45 +36,125 @@ body {
   margin-top: 15px;
 }
 
+#nav-list li {  /*login button for large screen*/
+  display: inline-block;
+  margin-top: 50px;
+}
 #nav-list a {
   color: white;
   background: #F97C19;
-  border-radius: 3px;
+  list-style: none;
+  padding: 9px 25px;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
-#login {
- position: absolute;
- right: 100px;
- padding-top: 30px;
 
-}
 #nav-list a:hover {
+  background: black;
+}
+
+#login-btn > a { /*login button for phone screen*/
+    font-size: 1.2em;
+    display: block;
+    margin: 0 0px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #F97C19;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+
+#login-btn a:hover {
   background: black;
 }
 /* END HEADER */
 
 /* BANNER */
-.hero-text {
+.banner-image{
+  background:url('../images/banner.jpg') no-repeat; 
+  height: 450px; 
+  background-size: cover;
+}
+.banner-color{
+  background-color:#F97C19; 
+  height: 450px;
+}
+.banner-color p{
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em
+}
+.banner-links{
+  list-style: none;
+}
+.banner-links a{
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  background-color: black;
+  padding: 15px 100px;
+}
+.banner-links a:hover{
 
-width: 100%;
-height: 100px;
-background: #F97C19;
+  border-color: black;
+  border-style: solid;
+}
+#register {
+  position: absolute;
+  right: 0;
+}
+#about{
+  position: absolute;
+  left: 0;
+}
+.banner-links li {
+  margin:350px 0px 0 0;
+}
+
+.banner-links-xs a {
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 50px;
+  margin:350px 0px 0 0;
 
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-
+.banner-links-xs a:hover{
+  background: orange;
 }
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-
+#about-btn > a {
+  position: absolute;
+  left: 0;
 }
-
+#register-btn > a {
+  position: absolute;
+  right: 0;
+}
 /* END OF BANNER */
+
+/* Apie mus */
+
+#title > h1{
+  font-style: italic;
+  padding: 40px;
+}
+
+/*FOOTER*/
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 137, 51, 0.06);
+}
+
+
 
