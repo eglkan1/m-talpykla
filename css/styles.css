@@ -153,6 +153,7 @@ body {
 .panel-footer {
 
  margin: 120px 0px 0px 0px;
+bottom: 0px;
  background-color: lightgrey;
 }
 
@@ -265,3 +266,46 @@ input {
 }
 
 /*END OF LOGIN FORM*/
+
+/*profile info page*/
+
+.info-h1 {
+  position: absolute;
+  width: 800px;
+top: 130px;
+padding-left: 430px;
+padding-top: 25px;
+padding-bottom: 25px;
+background-color: #F97C19;
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 1.7em;
+line-height: 0px;
+
+letter-spacing: 0.2em;
+
+color: #FFFFFF;
+}
+.info-body{
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  opacity: 1;
+  border-radius: 0;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #000000; 
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
