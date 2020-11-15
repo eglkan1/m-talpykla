@@ -1,7 +1,9 @@
 body {
   font-family: Playfair display;
 }
+
 /** HEADER **/
+
 #header-nav {
   background-color: white;
   margin: 0;
@@ -12,6 +14,7 @@ body {
   height: 120px;
   background-size: 8em;
   margin: 10px 15px 0px 0;
+  cursor: pointer;
 }
 .navbar-brand {
   padding-top: 25px;
@@ -33,26 +36,41 @@ body {
   margin-top: 15px;
 }
 
+#nav-list li {  /*login button for large screen*/
+  display: inline-block;
+  margin-top: 50px;
+}
 #nav-list a {
   color: white;
   background: #F97C19;
-  border-radius: 3px;
+  list-style: none;
+  padding: 9px 25px;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
-#login {
- position: absolute;
- right: 100px;
- padding-top: 30px;
 
-}
 #nav-list a:hover {
+  background: black;
+}
+
+#login-btn > a { /*login button for phone screen*/
+  font-size: 1.2em;
+  display: block;
+  margin: 0 0px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #F97C19;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+#login-btn a:hover {
   background: black;
 }
 /* END HEADER */
 
 /* BANNER */
-<<<<<<< Updated upstream
-.hero-text {
-=======
 .banner-image{
   background:url('../images/banner.jpg') no-repeat; 
   height: 450px; 
@@ -101,29 +119,17 @@ body {
 
 .banner-links-xs a {
   color: white;
+  transition: all 0.3s ease 0s;
   text-decoration: none;
   background-color: black;
   padding: 10px 50px;
   margin:350px 0px 0 0;
-  position: relative;
 
 }
-.overlay-btn {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
-}
 
-.banner-links-xs a:hover .overlay{
-  background-color: white;
-  color: black;
-  width: 100%;
-}
+.banner-links-xs a:hover{
+  border-color: black;
+  border-style: solid;
 }
 #about-btn > a {
   position: absolute;
@@ -187,28 +193,75 @@ body {
   text-align: center;
   position: relative;
 }
->>>>>>> Stashed changes
 
-width: 100%;
-height: 100px;
-background: #F97C19;
+.modal-content > h3 {
 
+  margin: 60px;
 }
 
-.column {
-  float: left;
+.modal-content-reg {
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  opacity: 1;
+  border-radius: 0;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #000000;
+}
+
+form > a.button {
+
+  color: white;
+  transition: all 0.3s ease 0s;
+  background-color: black;
+  text-decoration: none;
+  padding: 10px 128px;
+}
+
+form {
+  margin: 50px auto;
+  display: block;
+}
+
+.text-center li {
+  list-style: none;
+  margin: 10px;
+}
+
+form > a.button:hover {
+ border-color: black;
+ color: white;
+ border-style: solid;
+ text-decoration: none;
+}
+
+
+input {
   width: 50%;
-  padding: 5px;
-
+  display: block;
+  margin: 30px auto;
+  border: none;
+  border-bottom: 2px solid silver;
+   text-align: center;
+   outline: none;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
 }
 
-/* END OF BANNER */
+.close-reg {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+}
 
+/*END OF LOGIN FORM*/
