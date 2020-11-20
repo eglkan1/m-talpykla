@@ -287,25 +287,26 @@ letter-spacing: 0.2em;
 
 color: #FFFFFF;
 }
-.info-body{
-  width: 500px;
-  height: 550px;
-  background-color: white;
-  opacity: 1;
-  border-radius: 0;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  border: 1px solid #000000; 
-}
-.column {
-  float: left;
-  width: 50%;
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+
+#form {
+  background-color: #F3F3F3;
+}
+.avatar{
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#form input {
+  padding-left: 7px;
+  width: 300px; 
+  display: inline-block;
+  text-align: left;
+  margin: 2% 1.1% 0 3%;
+  background-color: #F3F3F3;
+}
+#form input:last-child {
+  margin-right: 0
 }
