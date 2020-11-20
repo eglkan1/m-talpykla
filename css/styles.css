@@ -293,16 +293,20 @@ color: #FFFFFF;
   background-color: #F3F3F3;
 }
 .avatar{
+  margin: 2% 3%;
   display: inline-block;
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 13em;
+  height: 13em;
   border-radius: 50%;
+  vertical-align:top;
 }
 #form input {
   padding-left: 7px;
   width: 300px; 
-  display: inline-block;
+  height: 3em;
+  /*
+  display: inline-block;*/
   text-align: left;
   margin: 2% 1.1% 0 3%;
   background-color: #F3F3F3;
