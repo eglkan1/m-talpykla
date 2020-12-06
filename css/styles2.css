@@ -53,7 +53,7 @@ body {
   background: black;
 }
 
-#login-btn > a { /*login button for phone screen*/
+#logout-btn > a { /*logout button for phone screen*/
   font-size: 1.2em;
   display: block;
   margin: 0 0px;
@@ -65,102 +65,60 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-#login-btn a:hover {
+#logout-btn a:hover {
   background: black;
 }
 /* END HEADER */
 
-/* BANNER */
-.banner-image{
-  background:url('../images/banner.jpg') no-repeat; 
-  height: 450px; 
-  background-size: cover;
+
+
+/* Title */
+.wrapper{
+  background: rgba(196, 196, 196, 0.2);
+  height: 100px;
+  width: 100%;
+  padding: 25px;
 }
-.banner-color{
-  background-color:#F97C19; 
-  height: 450px;
-}
-.banner-color p{
-  position: absolute;
+.title p{
+  text-align: center;;
   font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 0.2em;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20em
+  font-size: 30px;
+  letter-spacing: 0.2em; 
 }
-.banner-links{
-  list-style: none;
-}
-.banner-links a{
-  color: white;
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  background-color: black;
-  padding: 15px 100px;
-}
-.banner-links a:hover{
+/* end of title */
 
-  border-color: black;
-  border-style: solid;
+/*MAIN CONTENT*/
+input {
+  width: 90%;
+  margin: 20px auto;
+  border: none;
+  border-bottom: 2px solid silver;
+   outline: none;
 }
-#register {
-  position: absolute;
-  right: 0;
+.add-object {
+  background-color: white; 
+  color: solid silver;
+  font-weight: bold;
+  border: 1px solid silver;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  margin: 2px 30px 0px 0px ;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2));
 }
-#about{
-  position: absolute;
-  left: 0;
+.add-object:hover {
+background-color: silver; 
 }
-.banner-links li {
-  margin:350px 0px 0 0;
-}
+/*END OF MAIN CONTENT*/
 
-.banner-links-xs a {
-  color: white;
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  background-color: black;
-  padding: 10px 50px;
-  margin:350px 0px 0 0;
 
-}
+/*ADDING CATALOG FORM*/
 
-.banner-links-xs a:hover{
-  border-color: black;
-  border-style: solid;
-}
-#about-btn > a {
-  position: absolute;
-  left: 0;
-}
-#register-btn > a {
-  position: absolute;
-  right: 0;
-}
-/* END OF BANNER */
-
-/* Apie mus */
-
-#title > h1{
-  font-style: italic;
-  padding: 40px;
-}
-
-/*FOOTER*/
-
-.panel-footer {
-
- margin: 120px 0px 0px 0px;
- background-color: lightgrey;
-}
-
-/*END OF FOOTER*/
-
-/*LOGIN FORM*/
-
-.bg-modal {
+.add-modal {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -169,8 +127,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  /*display: none;*/
 }
+
 
 .bg-modal-reg {
   width: 100%;
@@ -186,8 +145,8 @@ body {
 
 .modal-content {
 
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height: 350px;
   background-color: white;
   opacity: 1;
   border-radius: 0;
@@ -224,17 +183,6 @@ form {
   margin: 10px;
 }
 
-
-input {
-  width: 50%;
-  display: block;
-  margin: 30px auto;
-  border: none;
-  border-bottom: 2px solid silver;
-   text-align: center;
-   outline: none;
-}
-
 .btn-primary {
   background-color: black;
 
@@ -264,3 +212,13 @@ input {
 }
 
 /*END OF LOGIN FORM*/
+
+/*FOOTER*/
+
+.panel-footer {
+
+ margin: 120px 0px 0px 0px;
+ background: rgba(196, 196, 196, 0.2);
+}
+
+/*END OF FOOTER*/

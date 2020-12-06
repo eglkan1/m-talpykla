@@ -12,3 +12,12 @@ document.getElementById("register").addEventListener("click",
 document.querySelector(".close-reg").addEventListener("click", function(){
   document.querySelector(".bg-modal-reg").style.display = "none";
 });
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
