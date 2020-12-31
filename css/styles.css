@@ -2,6 +2,10 @@ body {
   font-family: Playfair display;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /** HEADER **/
 
 #header-nav {
@@ -153,7 +157,6 @@ body {
 .panel-footer {
 
  margin: 120px 0px 0px 0px;
-bottom: 0px;
  background-color: lightgrey;
 }
 
@@ -167,10 +170,13 @@ bottom: 0px;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
+  position: fixed;
+
 }
 
 .bg-modal-reg {
@@ -179,51 +185,77 @@ bottom: 0px;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
+  position: fixed;
+}
+
+.bg-modal-reg .modal-content {
+  width: 40%;
+  height: 42%;
+
+}
+
+.bg-modal .modal-content {
+  width: 40%;
+  height: 40%;
+  margin: 0;
 }
 
 .modal-content {
-  width: 600px;
-  height: 500px;
-  background-color: white;
-  opacity: 1;
-  border-radius: 0;
+
   text-align: center;
-  position: relative;
+  margin: auto;
+  padding: 50px;
+  display: inline;
 }
 
-.modal-content > h3 {
-
-  margin: 60px;
-}
-
-.modal-content-reg {
-  width: 500px;
-  height: 550px;
-  background-color: white;
-  opacity: 1;
-  border-radius: 0;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  border: 1px solid #000000;
-}
-
-form > a.button {
-
-  color: white;
-  transition: all 0.3s ease 0s;
-  background-color: black;
-  text-decoration: none;
-  padding: 10px 128px;
-}
 
 form {
-  margin: 50px auto;
-  display: block;
+  margin: 0px auto;
+  
+}
+
+.form-inline {  
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  margin: 10px auto;
+  width: 100%;
+  border: 2px solid silver;
+  outline: none;
+  border-radius: 0;
+}
+
+.reg-button {
+  width: 73.5%;
+  height: 40px;
+  position: absolute;
+  bottom: 30px;
+  right: 62px;
+}
+.log-button {
+  width: 98.1%;
+  height: 40px;
+  
+  
+}
+
+.text-center a {
+  color: black;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
 }
 
 .text-center li {
@@ -231,23 +263,61 @@ form {
   margin: 10px;
 }
 
-form > a.button:hover {
- border-color: black;
- color: white;
- border-style: solid;
- text-decoration: none;
-}
-
 
 input {
-  width: 50%;
-  display: block;
-  margin: 30px auto;
-  border: none;
-  border-bottom: 2px solid silver;
-   text-align: center;
-   outline: none;
+
+  width: 100%;
+  margin: 20px auto;
+  border: 2px solid silver;
+  outline: none;
 }
+
+h3{
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+/*BUTTONS*/
+  
+.btn-primary {
+  background-color: black;
+
+}
+.btn-primary:hover {
+  background-color: black;
+}
+
+.btn-primary:active:focus {
+  background-color: black;
+}
+
+.btn{
+  border-radius: 0;
+}
+.btn-danger {
+  background-color:  #F97C19;
+  border: none;
+  margin: 5px;
+}
+.btn-danger:active {
+  background-color:  #F97C19;
+  border: none;
+}
+.btn-info {
+  background-color:  black;
+  border: none;
+  margin: 5px;
+}
+.btn-danger:hover {
+  background-color:  #f97e19b4;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color:  rgba(0, 0, 0, 0.678);
+}
+
+/*END OF BUTTONS*/
 
 .close {
   position: absolute;
@@ -267,50 +337,12 @@ input {
 
 /*END OF LOGIN FORM*/
 
-/*profile info page*/
+/*pagination*/
 
-.info-h1 {
-  position: absolute;
-  width: 800px;
-top: 130px;
-padding-left: 430px;
-padding-top: 25px;
-padding-bottom: 25px;
-background-color: #F97C19;
-font-family: Playfair Display;
-font-style: normal;
-font-weight: normal;
-font-size: 1.7em;
-line-height: 0px;
+.pagination ul li {
+color: #F97C19;
 
-letter-spacing: 0.2em;
-
-color: #FFFFFF;
 }
-
-
-#form {
-  background-color: #F3F3F3;
-}
-.avatar{
-  margin: 2% 3%;
-  display: inline-block;
-  vertical-align: middle;
-  width: 13em;
-  height: 13em;
-  border-radius: 50%;
-  vertical-align:top;
-}
-#form input {
-  padding-left: 7px;
-  width: 300px; 
-  height: 3em;
-  /*
-  display: inline-block;*/
-  text-align: left;
-  margin: 2% 1.1% 0 3%;
-  background-color: #F3F3F3;
-}
-#form input:last-child {
-  margin-right: 0
+#desc{
+  height: 100px;
 }

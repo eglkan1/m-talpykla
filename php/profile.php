@@ -4,14 +4,18 @@ session_start();
 $name="";
 $surname="";
 $username = "";
-$password = "";
+$password_new = "";
+$password_old = "";
 $email = "";
 $school = "";
 
 $errors = array();
 
 $db = mysqli_connect('localhost','root','','mtalpykla') or die("cannot connect to database");
-
+session_start();
+$username=$_SESSION['username'];
+$query=mysqli_query($db,"SELECT * FROM teachers where username='$username'")or die(mysqli_error());
+$row=mysqli_fetch_array($query);
 //Register users
 
 $name = mysqli_real_escape_string($db, $_POST['name']);

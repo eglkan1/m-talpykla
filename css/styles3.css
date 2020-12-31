@@ -1,0 +1,203 @@
+body {
+    font-family: Playfair display;
+  }
+  
+  h2{
+    font-family: Playfair display;
+  }
+  h1{
+    font-family: Playfair display;
+
+  }
+  /** HEADER **/
+  
+  #header-nav {
+    background-color: white;
+    margin: 0;
+  }
+
+
+  #logo-img{
+    background: url('../images/logo.png') no-repeat;
+    width: 120px;
+    height: 120px;
+    background-size: 8em;
+    margin: 10px 15px 0px 0;
+    cursor: pointer;
+  }
+  .navbar-brand {
+    padding-top: 25px;
+  
+  }
+  .navbar-brand h1 { /* name */
+    font-family: Playfair display;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: .1;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+  .navbar-brand p { /* Description */
+    color: black;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  
+  #nav-list li {  /*login button for large screen*/
+    display: inline-block;
+    margin-top: 50px;
+  }
+  #nav-list a {
+    color: white;
+    background: #F97C19;
+    list-style: none;
+    padding: 9px 25px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  #nav-list a:hover {
+    background: black;
+  }
+
+  #nav-list-acc li {  /*login button for large screen*/
+    display: inline-block;
+    margin-top: 50px;
+  }
+  #nav-list-acc a {
+    color: black;
+    background: #dadada;
+    list-style: none;
+    padding: 9px 25px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  #nav-list-acc a:hover {
+    background: #eeeeee;
+  }
+  
+  #logout-btn > a { /*logout button for phone screen*/
+    font-size: 1.2em;
+    display: block;
+    margin: 0 0px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #F97C19;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+  
+  #logout-btn a:hover {
+    background: black;
+  }
+  /* END HEADER */
+  
+  
+  
+  /* Title */
+  .wrapper{
+    background: rgba(196, 196, 196, 0.2);
+    height: 100px;
+    width: 100%;
+    padding: 25px;
+  }
+  .title p{
+    text-align: center;;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.2em; 
+  }
+  /* end of title */
+  
+  /*MAIN CONTENT*/
+  
+  .container {
+    
+    margin-top: 30px;
+
+  }
+
+  #testName{
+      width: 50%;
+  }
+  #textAnswer{
+    width: 100%;
+    height: 100px;
+}
+  .modal-content{
+  
+    padding: 100px;
+    box-shadow: none;
+    background-color:  #fff1e6b4;
+    padding: 50px;
+ 
+  }
+  h3 {
+    font-family: Playfair display;
+  }
+  input{
+      margin-bottom: 10px;
+
+  }
+  
+  
+  .text-center li {
+    list-style: none;
+    margin: 10px;
+  }
+  /* END OF MAIN CONTENT*/
+
+  /*BUTTONS*/
+  
+  .btn-primary {
+    background-color: black;
+  
+  }
+  .btn-primary:hover {
+    background-color: black;
+  }
+  
+  .btn-primary:active:focus {
+    background-color: black;
+  }
+  
+  .btn{
+    border-radius: 0;
+  }
+  .btn-danger {
+    background-color:  #F97C19;
+    border: none;
+    margin: 5px;
+  }
+  .btn-danger:active {
+    background-color:  #F97C19;
+    border: none;
+  }
+  .btn-info {
+    background-color:  black;
+    border: none;
+    margin: 5px;
+  }
+  .btn-danger:hover {
+    background-color:  #f97e19b4;
+    border: none;
+  }
+  
+  .btn-info:hover {
+    background-color:  rgba(0, 0, 0, 0.678);
+    border: none;
+  }
+
+ /*END OF BUTTONS*/
+  
+ #filedesc{
+  height: 100px;
+}
+#folders{
+  background-color: rgba(196, 196, 196, 0.2);
+  color: black;
+}
